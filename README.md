@@ -1,21 +1,21 @@
 # Letting go of early 2000's Avril Lavigne
 
-This is me (hey! I'm Éléonore Mayola) coming at you with a crucial investigation into what happened to Avril Lavigne in the early 2000's.
+This is me (hey! I'm Éléonore Mayola) coming to you with a crucial investigation into what happened to Avril Lavigne in the early 2000's.
 
 This announcement might surprise you if, unlike me, you haven't wandered down the comments under one of her early YouTube video. That's where I discovered a specific group of Lavigne fans are convinced she passed away in 2003 and was replaced by a lookalike [1,2].
 
 It is a fact that Avril Lavigne changed in both her music and style, but who doesn't change over time. The explanation being that transformation is very unlikely to be so dramatic, but then what happened?
 While it is tricky to account for her personal /internal evolution, some of her musical influences (such as her support band and producing partners) can be looked at to find a correlation with her visible transformation (music and style).
 
-<img src="img/Let-Go_albumcover.jpg" title="Lavigne Let Go album cover" style="float: left; width: 15%; margin-right: 2px; margin-top: 15px;" />
-<img src="img/under-my-skin_albumcover.jpg" title="Lavigne Under My Skin album cover" style="float: left; width: 15%; margin-right: 2px;" />
-<img src="img/the-best-damn-thing_albumcover.jpg" title="Lavigne the-best-damn-thing album cover" style="float: left; width: 15%; margin-right: 2px;" />
-<img src="img/Goodbye-Lullaby_albumcover.jpg" title="Lavigne Goodbye-Lullaby album cover" style="float: left; width: 15%; margin-right: 2px;" />
-<img src="img/Avril-Lavigne_albumcover.jpg" title="Lavigne Avril-Lavigne album cover" style="float: left; width: 15%; margin-right: 2px;" />
-<img src="img/Head-Above-Water_albumcover.jpg" title="Lavigne Head-Above-Water album cover" style="float: left; width: 15%;" />
+<img src="img/Let-Go_albumcover.jpg" title="Lavigne Let Go album cover" style="float: left; width: 150px; margin-right: 2px; margin-top: 15px;" />
+<img src="img/under-my-skin_albumcover.jpg" title="Lavigne Under My Skin album cover" style="float: left; width: 150px; margin-right: 2px;" />
+<img src="img/the-best-damn-thing_albumcover.jpg" title="Lavigne the-best-damn-thing album cover" style="float: left; width: 150px; margin-right: 2px;" />
+<img src="img/Goodbye-Lullaby_albumcover.jpg" title="Lavigne Goodbye-Lullaby album cover" style="float: left; width: 150px; margin-right: 2px;" />
+<img src="img/Avril-Lavigne_albumcover.jpg" title="Lavigne Avril-Lavigne album cover" style="float: left; width: 150px; margin-right: 2px;" />
+<img src="img/Head-Above-Water_albumcover.jpg" title="Lavigne Head-Above-Water album cover" style="float: left; width: 150px;" />
 [6]
 
-Avril Lavigne's albums popularity decreased especially after the 3rd album. This third album seems different musically (tempo, energy, speechiness) and has songs viewed as "Bubblegum Pop". It was made after she left Arista Records, and after the biggest musicians turnover in her backing band. While her style (hair, clothes) started to change between the two first albums (2002 and 2004), which is consistent with leaving teenagehood, her biggest musical change happened on the third album (2007). This change in both style and music has lost her a part of her fans. And it could obviously not be explained by the artist being replaced in 2003.
+Avril Lavigne's albums popularity decreased especially after the 3rd album. This third album seems different musically (tempo, energy, speechiness) and has songs viewed as part of a style called "Bubblegum Pop". It was made after she left Arista Records, and after the biggest musicians turnover in her backing band. While her style (hair, clothes) started to change between the two first albums (released in 2002 and 2004), which is consistent with her leaving teenagehood, her biggest musical change happened on the third album (2007). This change in both style and music has lost her a part of her fans. And it could obviously not be explained by the artist being replaced in 2003.
 
 
 ```python
