@@ -1,5 +1,12 @@
 # Letting go of early 2000's Avril Lavigne
 
+<div id="album_cover">
+<style scoped>
+    #album_cover img {
+        width: 150px;
+    }
+</style>
+
 This is me (hey! I'm Éléonore Mayola) coming to you with a crucial investigation into what happened to Avril Lavigne in the early 2000's.
 
 This announcement might surprise you if, unlike me, you haven't wandered down the comments under one of her early YouTube video. That's where I discovered a specific group of Lavigne fans are convinced she passed away in 2003 and was replaced by a lookalike [1,2].
@@ -16,6 +23,7 @@ While it is tricky to account for her personal /internal evolution, some of her 
 [6]
 
 Avril Lavigne's albums popularity decreased especially after the 3rd album. This third album seems different musically (tempo, energy, speechiness) and has songs viewed as part of a style called "Bubblegum Pop". It was made after she left Arista Records, and after the biggest musicians turnover in her backing band. While her style (hair, clothes) started to change between the two first albums (released in 2002 and 2004), which is consistent with her leaving teenagehood, her biggest musical change happened on the third album (2007). This change in both style and music has lost her a part of her fans. And it could obviously not be explained by the artist being replaced in 2003.
+</div>
 
 
 ```python
