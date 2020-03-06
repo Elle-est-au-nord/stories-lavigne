@@ -10,7 +10,7 @@ While it is tricky to account for her personal /internal evolution, some of her 
 <img src="img/album_covers.png" title="Lavigne studio album covers" />
 [6]
 
-Avril Lavigne's albums popularity decreased especially after the 3rd album. This third album seems different musically (tempo, energy, speechiness) and has songs viewed as part of a style called "Bubblegum Pop". It was made after she left Arista Records, and after the biggest musicians turnover in her backing band. While her style (hair, clothes) started to change between the two first albums (released in 2002 and 2004), which is consistent with her leaving teenagehood, her biggest musical change happened on the third album (2007). This change in both style and music has lost her a part of her fans. And it could obviously not be explained by the artist being replaced in 2003.
+Avril Lavigne's albums popularity decreased especially after the 3rd album. This third album seems different in its content (more energy, more speechiness) and has songs viewed as part of a style called "Bubblegum Pop" and the first time Avril Lavigne produces songs. It was made after she left Arista Records, and after the biggest musicians turnover in her backing band. While her style (hair, clothes) started to change between the two first albums (released in 2002 and 2004), which is consistent with her leaving teenagehood, her biggest musical change happened on the third album (2007). This change in both style and music has lost her a part of her fans. And it could obviously not be explained by the artist being replaced in 2003.
 
 
 ```python
@@ -165,14 +165,14 @@ df_albums
 
 
 ```python
-df_albums.to_csv("al_albums_data.csv")
+# df_albums.to_csv("al_albums_data.csv")
 ```
 
 ### Albums sales and debut in US charts
 
 
 ```python
-chart1 = alt.Chart(df_albums, width=300, height=200).mark_point(size=100, filled=True, opacity=1).encode(
+chart1 = alt.Chart(df_albums, width=300, height=200).mark_point(size=100, filled=True, opacity=0.8).encode(
     alt.X('year',
         scale=alt.Scale(domain=(1999, 2019))
     ),
@@ -180,7 +180,7 @@ chart1 = alt.Chart(df_albums, width=300, height=200).mark_point(size=100, filled
     color=alt.Color('name', sort=['year'])
 )
 
-chart2 = alt.Chart(df_albums, width=300, height=200).mark_bar(size=20).encode(
+chart2 = alt.Chart(df_albums, width=300, height=200).mark_bar(size=20, opacity=0.8).encode(
     x='year:O',
     y=alt.Y('billboard200_debut:Q', 
            scale=alt.Scale(domain=(0, 15))),
@@ -191,7 +191,7 @@ chart1 | chart2
 ```
 
 
-    <vega.vegalite.VegaLite at 0x7fe0e2056a58>
+    <vega.vegalite.VegaLite at 0x7f08a5f9a630>
 
 
 
@@ -204,6 +204,12 @@ chart1 | chart2
 
 ![png](output_11_2.png)
 
+
+
+```python
+# chart1.save('plots/chart1.json')
+# chart2.save('plots/chart2.json')
+```
 
 #### => A.L. studio albums global sales decreased with time
 #### => A.L. studio albums US chart debut worsened with time
@@ -936,7 +942,7 @@ al_songs.head()
 
 
 ```python
-al_songs.to_csv('al_songs_spotify_data_with_albums.csv', index=False)
+# al_songs.to_csv('al_songs_spotify_data_with_albums.csv', index=False)
 ```
 
 <img src="img/oym_properties.png" title="Properties in the Organize Your Music analysis" />
@@ -1007,7 +1013,7 @@ chart3 | chart4 | chart5
 ```
 
 
-    <vega.vegalite.VegaLite at 0x7f994c0b6160>
+    <vega.vegalite.VegaLite at 0x7f08a5f9a048>
 
 
 
@@ -1018,8 +1024,14 @@ chart3 | chart4 | chart5
 
 
 
-![png](output_31_2.png)
+![png](output_32_2.png)
 
+
+
+```python
+# alt.hconcat(chart3, chart4, chart5).save('plots/charts345.json')
+# alt.hconcat(chart3, chart4, chart5).save('plots/charts345.html')
+```
 
 
 ```python
@@ -1028,11 +1040,7 @@ chart6 | chart7
 ```
 
 
-    <vega.vegalite.VegaLite at 0x7f994c0b6dd8>
-
-
-
-![png](output_32_1.png)
+    <vega.vegalite.VegaLite at 0x7f08dc9a6630>
 
 
 
@@ -1041,6 +1049,16 @@ chart6 | chart7
     
 
 
+
+
+![png](output_34_2.png)
+
+
+
+```python
+# alt.hconcat(chart6, chart7).save('plots/charts67.json')
+# alt.hconcat(chart6, chart7).save('plots/charts67.html')
+```
 
 
 ```python
@@ -1049,7 +1067,7 @@ chart8 | chart9
 ```
 
 
-    <vega.vegalite.VegaLite at 0x7f994c058b00>
+    <vega.vegalite.VegaLite at 0x7f08dc122668>
 
 
 
@@ -1060,13 +1078,76 @@ chart8 | chart9
 
 
 
-![png](output_33_2.png)
+![png](output_36_2.png)
 
 
-#### => Musically, songs from the 3rd record seem more upbeat (as reflected by their BPM and energy) and have more lyrics. Songs on the 4th album are more acoustic.
 
-#### Using songs from an open Spotify playlist [5] shows the 1st and 2nd album are more similar (energy, acousticness, speechiness and popularity) and the 1st and fourth album are also quite close (BPM, danceability and speechiness).
-It'd be interesting to try this analysis on songs from the 2 last studio albums.
+```python
+# alt.hconcat(chart8, chart9).save('plots/charts89.json')
+# alt.hconcat(chart8, chart9).save('plots/charts89.html')
+```
+
+
+```python
+# Energy vs acousticness
+chart10 = alt.Chart(al_songs, width=200, height=200).mark_point(size=100, filled=True, opacity=0.7).encode(
+    x='energy:Q',
+    y='acousticness:Q',
+    color=alt.Color('album', sort=['year']),
+    tooltip=['title', 'album']
+).interactive()
+
+# Energy vs speechiness
+chart11 = alt.Chart(al_songs, width=200, height=200).mark_point(size=100, filled=True, opacity=0.7).encode(
+    x='energy:Q',
+    y='speechiness:Q',
+    color=alt.Color('album', sort=['year']),
+    tooltip=['title', 'album']
+).interactive()
+
+# Acousticness vs speechiness
+chart12 = alt.Chart(al_songs, width=200, height=200).mark_point(size=100, filled=True, opacity=0.7).encode(
+    x='acousticness:Q',
+    y='speechiness:Q',
+    color=alt.Color('album', sort=['year']),
+    tooltip=['title', 'album']
+).interactive()
+```
+
+
+```python
+# Energy vs acousticness | Energy vs speechiness |Acousticness vs speechiness
+chart10 | chart11 | chart12
+```
+
+
+    <vega.vegalite.VegaLite at 0x7f08a5de4b00>
+
+
+
+
+
+    
+
+
+
+
+![png](output_39_2.png)
+
+
+
+```python
+# alt.hconcat(chart10, chart11, chart12).save('plots/charts101113.json')
+# alt.hconcat(chart10, chart11, chart12).save('plots/charts101112.html')
+```
+
+#### => Musically, there are a lot of similarities overall.
+
+#### Using songs from an open Spotify playlist [5] shows differences in energy and acousticness. The energy of her albums increased until the third album and then decreased. The songs are also more and more acoustic as time goes by. In terms of lyrics, the third, fifth and sixth albums seem to have more word content that the first, second and fourth albums.
+
+- Albums 1, 2, 3: more energy
+- Albums 4, 5, 6: more acoustic
+- Albums 3, 5, 6: more words
 
 **References**
 
