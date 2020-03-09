@@ -8,7 +8,7 @@ It is a fact that Avril Lavigne changed in both her music and style, but who doe
 While it is tricky to account for her personal /internal evolution, some of her musical influences (such as her support band and producing partners) can be looked at to find a correlation with her visible transformation (music and style).
 
 <img src="img/album_covers.png" title="Lavigne studio album covers" />
-[6]
+[8]
 
 Avril Lavigne's albums popularity decreased especially after the 3rd album. This third album seems different in its content (more energy, more speechiness) and has songs viewed as part of a style called "Bubblegum Pop" and the first time Avril Lavigne produces songs. It was made after she left Arista Records, and after the biggest musicians turnover in her backing band. While her style (hair, clothes) started to change between the two first albums (released in 2002 and 2004), which is consistent with her leaving teenagehood, her biggest musical change happened on the third album (2007). This change in both style and music has lost her a part of her fans. And it could obviously not be explained by the artist being replaced in 2003.
 
@@ -27,25 +27,25 @@ alt.renderers.enable('notebook')
 
 
 ## Avril Lavigne studio albums data
-[3, 4]
+[3, 4, 5]
 
 
 ```python
 al_albums = [
-    {"name": "Let Go", "year": 2002, "genre": ["Alternative rock","Pop punk"], "global_sales": 16000000, 
+    {"name": "Let Go", "year": 2002, "genre": ["Alternative rock","Pop punk"], "global_sales": 16220000, 
      "billboard200_debut": 2, "label": ["Arista Records"], 
      "producers": ["L.A. Reid", "The Matrix", "Clif Magness", "Curt Frasca", "Peter Zizzo"]},
-    {"name": "Under My Skin", "year": 2004, "genre": ["Alternative rock","Pop punk"], "global_sales": 10000000, 
+    {"name": "Under My Skin", "year": 2004, "genre": ["Alternative rock","Pop punk"], "global_sales": 8020000, 
      "billboard200_debut": 1, "label": ["Arista Records", "RCA Records"], 
      "producers": ["Raine Maida", "Don Gilmore", "Butch Walker"]},
-    {"name": "The Best Damn Thing", "year": 2007, "genre": ["Bubblegum pop","Pop punk"], "global_sales": 6000000, 
+    {"name": "The Best Damn Thing", "year": 2007, "genre": ["Bubblegum pop","Pop punk"], "global_sales": 5660000, 
      "billboard200_debut": 1, "label": ["RCA Records"], 
      "producers": ["Avril Lavigne", "Deryck Whibley", "Butch Walker", "Rob Cavallo", "Dr. Luke", 
                   "The Submarines", "Jesse Welch", "Steven Wolf"]},
-    {"name": "Goodbye Lullaby", "year": 2011, "genre": ["Pop rock"], "global_sales": 2000000, 
+    {"name": "Goodbye Lullaby", "year": 2011, "genre": ["Pop rock"], "global_sales": 1650000, 
      "billboard200_debut": 4, "label": ["RCA Records"], 
      "producers": ["Avril Lavigne", "Deryck Whibley", "Butch Walker", "Max Martin", "Shellback"]},
-    {"name": "Avril Lavigne", "year": 2013, "genre": ["Pop", "Pop rock"], "global_sales": 650000, 
+    {"name": "Avril Lavigne", "year": 2013, "genre": ["Pop", "Pop rock"], "global_sales": 740000, 
      "billboard200_debut": 5, "label": ["Epic Records"], 
      "producers": ["Avril Lavigne", "L.A. Reid", "Martin Johnson", "Peter Svensson", 
                   "David Hodges", "Matt Squire", "Chad Kroeger"]},
@@ -102,7 +102,7 @@ df_albums
       <td>Let Go</td>
       <td>2002</td>
       <td>[Alternative rock, Pop punk]</td>
-      <td>16000000.0</td>
+      <td>16220000.0</td>
       <td>2</td>
       <td>[Arista Records]</td>
       <td>[L.A. Reid, The Matrix, Clif Magness, Curt Fra...</td>
@@ -112,7 +112,7 @@ df_albums
       <td>Under My Skin</td>
       <td>2004</td>
       <td>[Alternative rock, Pop punk]</td>
-      <td>10000000.0</td>
+      <td>8020000.0</td>
       <td>1</td>
       <td>[Arista Records, RCA Records]</td>
       <td>[Raine Maida, Don Gilmore, Butch Walker]</td>
@@ -122,7 +122,7 @@ df_albums
       <td>The Best Damn Thing</td>
       <td>2007</td>
       <td>[Bubblegum pop, Pop punk]</td>
-      <td>6000000.0</td>
+      <td>5660000.0</td>
       <td>1</td>
       <td>[RCA Records]</td>
       <td>[Avril Lavigne, Deryck Whibley, Butch Walker, ...</td>
@@ -132,7 +132,7 @@ df_albums
       <td>Goodbye Lullaby</td>
       <td>2011</td>
       <td>[Pop rock]</td>
-      <td>2000000.0</td>
+      <td>1650000.0</td>
       <td>4</td>
       <td>[RCA Records]</td>
       <td>[Avril Lavigne, Deryck Whibley, Butch Walker, ...</td>
@@ -142,7 +142,7 @@ df_albums
       <td>Avril Lavigne</td>
       <td>2013</td>
       <td>[Pop, Pop rock]</td>
-      <td>650000.0</td>
+      <td>740000.0</td>
       <td>5</td>
       <td>[Epic Records]</td>
       <td>[Avril Lavigne, L.A. Reid, Martin Johnson, Pet...</td>
@@ -165,7 +165,7 @@ df_albums
 
 
 ```python
-# df_albums.to_csv("al_albums_data.csv")
+#df_albums.to_csv("al_albums_data.csv")
 ```
 
 ### Albums sales and debut in US charts
@@ -191,7 +191,7 @@ chart1 | chart2
 ```
 
 
-    <vega.vegalite.VegaLite at 0x7f08a5f9a630>
+    <vega.vegalite.VegaLite at 0x7f31095e65c0>
 
 
 
@@ -311,7 +311,7 @@ albums_selection
 
 ## Avril Lavigne's songs
 
-[5]
+[6]
 
 
 ```python
@@ -1143,11 +1143,134 @@ chart10 | chart11 | chart12
 
 #### => Musically, there are a lot of similarities overall.
 
-#### Using songs from an open Spotify playlist [5] shows differences in energy and acousticness. The energy of her albums increased until the third album and then decreased. The songs are also more and more acoustic as time goes by. In terms of lyrics, the third, fifth and sixth albums seem to have more word content that the first, second and fourth albums.
+#### Using songs from an open Spotify playlist [6] shows differences in energy and acousticness. The energy of her albums increased until the third album and then decreased. The songs are also more and more acoustic as time goes by. In terms of lyrics, the third, fifth and sixth albums seem to have more word content that the first, second and fourth albums.
 
 - Albums 1, 2, 3: more energy
 - Albums 4, 5, 6: more acoustic
 - Albums 3, 5, 6: more words
+
+## A bit of industry context
+
+
+```python
+women_singers_2000s = pd.read_csv('popular_women_artists_2000s.csv')
+```
+
+
+```python
+women_singers_2000s.head()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>artist</th>
+      <th>year</th>
+      <th>global album sales</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Adele</td>
+      <td>2008</td>
+      <td>8560000</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Adele</td>
+      <td>2011</td>
+      <td>30140000</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Adele</td>
+      <td>2015</td>
+      <td>20410000</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Alicia Keys</td>
+      <td>2001</td>
+      <td>12600000</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Alicia Keys</td>
+      <td>2003</td>
+      <td>8000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+This is subjective, I'm selecting a few women solo singers (amongst popular women artists in the 2000's) that I want to compare to Avril Lavigne.
+
+
+```python
+# Trying to select for more comparable artists
+artists_selection = ["Avril Lavigne", "Britney Spears", "Christina Aguilera", 
+                     "Katy Perry", "Pink", "Taylor Swift"]
+```
+
+
+```python
+women_singers_selection = women_singers_2000s.loc[women_singers_2000s.artist.isin(artists_selection)];
+```
+
+
+```python
+chart13 = alt.Chart(women_singers_selection, width=600, height=400).mark_line(size=5, opacity=0.8).encode(
+    x='year:O',
+    y='global album sales:Q',
+    color=alt.Color('artist')
+)
+
+chart13
+```
+
+
+    <vega.vegalite.VegaLite at 0x7f310890a2e8>
+
+
+
+
+
+    
+
+
+
+
+![png](output_48_2.png)
+
+
+
+```python
+chart13.save('plots/chart13.json')
+```
+
+It seems Avril Lavigne started her career with high record sales when looking at other solo women artists of the early 2000's like Britney Spears and Christina Aguilera. Those two artists have been very feminine (and sexualised) from the beginning of their singing career and their sales pattern also when down. It therefore doesn't seem like a more feminine appearance would have been a strategy for reaching out to the public.
+This could be different past 2014 when creating a following on social media platform (like Instagram) would rely even more on the artists appearance.
 
 **References**
 
@@ -1158,10 +1281,12 @@ Conspiracy
 Data for analysis
 * [3] https://en.wikipedia.org/wiki/Avril_Lavigne
 * [4] https://en.wikipedia.org/wiki/Avril_Lavigne_discography
-* [5] open Spotify playlist with all songs from studio recorded albums: https://open.spotify.com/playlist/1cVKLVWEFN2Be7tTA13qUj analyzed using http://organizeyourmusic.playlistmachinery.com (Powered by Spotify. Created by @plamere at The Science of Mu)
+* [5] https://chartmasters.org/2018/02/cspc-avril-lavigne-popularity-analysis/9/
+* [6] open Spotify playlist with all songs from studio recorded albums: https://open.spotify.com/playlist/1cVKLVWEFN2Be7tTA13qUj analyzed using http://organizeyourmusic.playlistmachinery.com (Powered by Spotify. Created by @plamere at The Science of Mu)
+* [7] Global sales for each studio album of popular solo women artists between 2000 and 2015. Data from https://chartmasters.org/ - Note: I chose the album with higher sales when two albums are realised the same year (Shakira in 2005 and Jennifer Lopez in 2007) and looked only at English albums for Céline Dion.
 
 Other
-* [6] photos: https://avrillavigne.com/music/
+* [8] photos: https://avrillavigne.com/music/
 * MTV docu, 2007: https://www.youtube.com/watch?v=f8GLe10jLSw
 
 

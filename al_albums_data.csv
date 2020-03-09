@@ -1,7 +1,7 @@
 ,name,year,genre,global_sales,billboard200_debut,label,producers
-0,Let Go,2002,"['Alternative rock', 'Pop punk']",16000000.0,2,['Arista Records'],"['L.A. Reid', 'The Matrix', 'Clif Magness', 'Curt Frasca', 'Peter Zizzo']"
-1,Under My Skin,2004,"['Alternative rock', 'Pop punk']",10000000.0,1,"['Arista Records', 'RCA Records']","['Raine Maida', 'Don Gilmore', 'Butch Walker']"
-2,The Best Damn Thing,2007,"['Bubblegum pop', 'Pop punk']",6000000.0,1,['RCA Records'],"['Avril Lavigne', 'Deryck Whibley', 'Butch Walker', 'Rob Cavallo', 'Dr. Luke', 'The Submarines', 'Jesse Welch', 'Steven Wolf']"
-3,Goodbye Lullaby,2011,['Pop rock'],2000000.0,4,['RCA Records'],"['Avril Lavigne', 'Deryck Whibley', 'Butch Walker', 'Max Martin', 'Shellback']"
-4,Avril Lavigne,2013,"['Pop', 'Pop rock']",650000.0,5,['Epic Records'],"['Avril Lavigne', 'L.A. Reid', 'Martin Johnson', 'Peter Svensson', 'David Hodges', 'Matt Squire', 'Chad Kroeger']"
+0,Let Go,2002,"['Alternative rock', 'Pop punk']",16220000.0,2,['Arista Records'],"['L.A. Reid', 'The Matrix', 'Clif Magness', 'Curt Frasca', 'Peter Zizzo']"
+1,Under My Skin,2004,"['Alternative rock', 'Pop punk']",8020000.0,1,"['Arista Records', 'RCA Records']","['Raine Maida', 'Don Gilmore', 'Butch Walker']"
+2,The Best Damn Thing,2007,"['Bubblegum pop', 'Pop punk']",5660000.0,1,['RCA Records'],"['Avril Lavigne', 'Deryck Whibley', 'Butch Walker', 'Rob Cavallo', 'Dr. Luke', 'The Submarines', 'Jesse Welch', 'Steven Wolf']"
+3,Goodbye Lullaby,2011,['Pop rock'],1650000.0,4,['RCA Records'],"['Avril Lavigne', 'Deryck Whibley', 'Butch Walker', 'Max Martin', 'Shellback']"
+4,Avril Lavigne,2013,"['Pop', 'Pop rock']",740000.0,5,['Epic Records'],"['Avril Lavigne', 'L.A. Reid', 'Martin Johnson', 'Peter Svensson', 'David Hodges', 'Matt Squire', 'Chad Kroeger']"
 5,Head Above Water,2019,['Pop rock'],,13,['BMG'],"['Avril Lavigne', 'Stephan Moccio', 'Chris Baseford', 'Johan Carlsson', 'Lauren Christy', 'Ryan Cabrera', 'Chad Kroeger']"
