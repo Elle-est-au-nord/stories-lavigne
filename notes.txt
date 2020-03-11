@@ -9,3 +9,33 @@ Under my skin - large image
 The best damn thing - small image https://avrillavigne.com/music/
 The best damn thing - medium image https://song.link/album/us/i/251094482
 The best damn thing - large image 
+
+________________
+
+Process to use Mural (getmural.io)
+--
+
+1) Download the Mural story from the desktop app
+2) Keep repo messiness to a minimum by adding all the Mural files (except 'index.html') in a 'mural_story/' folder
+3) Change file path to reflect step 2)
+4) Replace any 'http://' by 'https://' to prevent Mixed Content security error in the app
+5) Edit 'index.html' to embed the Altair/Vega plots
+Add:
+
+<head>
+  <!-- Import Vega 5 & Vega-Lite 3 (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@[VERSION]"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@[VERSION]"></script>
+  <!-- Import vega-embed -->
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@[VERSION]"></script>
+</head>
+<body>
+
+<div id="vis"></div>
+
+<script type="text/javascript">
+  var spec = "https://raw.githubusercontent.com/vega/vega/master/docs/examples/bar-chart.vg.json";
+  vegaEmbed('#vis', spec).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
