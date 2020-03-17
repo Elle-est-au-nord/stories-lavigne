@@ -10846,8 +10846,14 @@ $('[data-scroll-speed]').moveIt(); // give mobile a special "unmute button" per 
 
 if (isMobile.any) {
   $('.mute').remove();
+  $('.mobile-player').css('display', 'block');
+  $('.ls-player').css('display', 'none');
+  $('.player-symbol').css('display', 'inline-block');
 } else {
   $('.mobile-mute').remove();
+  $('.ls-player').css('display', 'block');
+  $('.mobile-player').css('display', 'none');
+  $('.player-symbol').css('display', 'none');
   $('.mute').click(function () {
     var $this = $(this);
 
@@ -10878,6 +10884,11 @@ if (isMobile.any) {
 $('.sticks_wrapper').click(function () {
   $('body').toggleClass('paneOpen');
 });
+
+$('.player-symbol').click(function () {
+  $('body').toggleClass('paneOpen');
+});
+
 $('nav').on('click', 'li', function () {
   scrollStory.index(parseInt(this.dataset.id, 10));
 });
