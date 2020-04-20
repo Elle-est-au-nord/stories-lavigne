@@ -1,6 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/39c30a0b-b8a6-446c-911e-237f3269c6c7/deploy-status)](https://app.netlify.com/sites/avril-lavigne-evolution-2000s/deploys)
-
-
 # Letting go of early 2000's Avril Lavigne
 
 This is me (hey! I'm Éléonore Mayola) coming to you with a crucial investigation into what happened to Avril Lavigne in the early 2000's.
