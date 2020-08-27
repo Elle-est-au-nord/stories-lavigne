@@ -1282,8 +1282,8 @@ Data for analysis
 * [3] https://en.wikipedia.org/wiki/Avril_Lavigne
 * [4] https://en.wikipedia.org/wiki/Avril_Lavigne_discography
 * [5] https://chartmasters.org/2018/02/cspc-avril-lavigne-popularity-analysis/9/
-* [6] open Spotify playlist with all songs from studio recorded albums: https://open.spotify.com/playlist/1cVKLVWEFN2Be7tTA13qUj analyzed using http://organizeyourmusic.playlistmachinery.com (Powered by Spotify. Created by @plamere at The Science of Mu)
-* [7] Global sales for each studio album of popular solo women artists between 2000 and 2015. Data from https://chartmasters.org/ - Note: I chose the album with higher sales when two albums are realised the same year (Shakira in 2005 and Jennifer Lopez in 2007) and looked only at English albums for Céline Dion.
+* [6] open Spotify playlist with all songs from studio recorded albums: https://open.spotify.com/playlist/1cVKLVWEFN2Be7tTA13qUj analyzed using http://organizeyourmusic.playlistmachinery.com (Powered by Spotify. Created by @plamere at The Science of Music Hackathon in NYC on Aug 6, 2016.)
+* [7] Global sales for each studio album of popular solo women artists between 2000 and 2015. Data from https://chartmasters.org/ (I took the liberty to limit the the plot to 6 artists for readability).
 
 Other
 * [8] photos: https://avrillavigne.com/music/
